@@ -1,0 +1,160 @@
+/* poppins-regular */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf'); /* IE9 Compat Modes */
+    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.seccion-uno-texto {
+   background-image: url('../assets/img/back_main_img.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   height: 500px;
+}
+.beneficios {
+    background: transparent linear-gradient(180deg, #790F09 0%, #E93222 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000088;
+    border-radius: 10px;
+}
+
+/*BENEFICIOS*/
+.title-beneficios::after {
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 18.5px solid #790F09;
+    margin: 0;
+    left: -13rem;
+    bottom: 0;
+}
+
+
+/*seccion fpop*/
+.shadow-seccion{
+    box-shadow: 0px 3px 6px #00000088;
+}
+.footer-fpop {
+    background: transparent linear-gradient(270deg, #0E5591 0%, #00ADEE 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 10px 10px;
+}
+#btn-solicita-chip {
+    box-shadow: 0px 3px 6px #00000088;
+}
+
+
+/*bancaya*/
+.shadow-btn {
+    box-shadow: 0px 3px 6px #00000082;
+}
+.beneficio img {
+    height: 100px;
+}
+.accordion-button:not(.collapsed) {
+    color: #EE7B00 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:after {
+    background-image: url(../assets/img/add_black_24dp.svg) ;
+}
+
+.accordion-button:not(.collapsed):after {
+    background-image: url(../assets/img/remove_black_24dp.svg)  ;
+}
+
+.accordion-button:after{-ms-flex-shrink:0;-webkit-transition:transform .2s ease-in-out}
+.accordion-button:after {
+    -webkit-transition: none;
+    transition: none
+}
+.accordion-button {
+    overflow-anchor: none
+}
+
+.accordion-button:not(.collapsed):after {
+    
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg)
+}
+
+.accordion-button:after {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .accordion-button:after {
+        -webkit-transition: none;
+        transition: none
+    }
+}
+
+.accordion-button:hover {
+    z-index: 2
+}
+
+.accordion-button:focus {
+    z-index: 3
+}
+
+.accordion-item:first-of-type {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: calc(.5rem - 1px);
+    border-top-right-radius: calc(.5rem - 1px)
+}
+
+.accordion-item:not(:first-of-type) {
+    border-top: 0
+}
+
+.accordion-item:last-of-type {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: calc(.5rem - 1px);
+}
+/*RECOMIENDA Y AHORRA*/
+.title-amarillo {
+    color: #F5DFAA;
+}
+#seccion-rya {
+    background: transparent linear-gradient(180deg, #FD0010 0%, #7F0000 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #00000088;
+}
+.footer-rya {
+    background: transparent linear-gradient(270deg, #EFEFEF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    color: #B90007;
+    border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+    .seccion-uno-texto {
+        background-image: url('../assets/img/banner-movil.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
